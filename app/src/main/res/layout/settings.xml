@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard"
+    tools:ignore="ExtraText">
+
+
+
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pomodoro_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/profilebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="58dp" />
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settingsbtn"
+            app:layout_constraintStart_toEndOf="@+id/profilebtn"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+
+        <ImageButton
+            android:id="@+id/settingsbtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="311dp" />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="1dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/pick_profilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="90dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/pick_profilebtn"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#ffffff"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/kiddosy_regular"
+            android:text="Choose Profile"
+            android:textColor="#5BADEC"
+            android:textSize="15sp"
+ />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_Fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="38dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:text="First Name"
+                android:textColor="#a575d2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_Fname"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:hint="First Name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_Lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:text="Last Name"
+                android:textColor="#a575d2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_Lname"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:hint="Last Name" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:text="School"
+                android:textColor="#a575d2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_school"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:hint="School" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:text="Number"
+                android:textColor="#a575d2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_number"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:hint="Contact Number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_save_profile"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="143dp"
+                android:layout_height="48dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#5BADEC"
+                android:fontFamily="@font/kiddosy_regular"
+                android:gravity="center"
+                android:text="Save"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:cornerRadius="32dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

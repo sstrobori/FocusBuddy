@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/additional_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Weekday Spinner -->
+
+        <!-- Time EditText -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/additional_editTime_sched"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Start Time"
+                android:focusable="false"
+                android:inputType="none" />
+
+            <EditText
+                android:id="@+id/additional_editTime_sched2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="End Time"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </LinearLayout>
+
+        <!-- Subject EditText -->
+        <EditText
+            android:id="@+id/additional_editSubject_sched"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Subject"
+            android:inputType="text" />
+
+        <!-- Save Button -->
+    </LinearLayout>
+
+
+
+</LinearLayout>

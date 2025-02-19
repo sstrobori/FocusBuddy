@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Enter Task -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ExtraText">
+
+        <!-- EditText for Task Name -->
+        <EditText
+            android:id="@+id/edit_todo_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter task name"
+            android:textSize="20sp"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:layout_marginBottom="10dp"/>
+
+=
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save_task_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kiddosy_regular"
+            android:textSize="19dp"
+            android:backgroundTint="#5BADEC"
+            android:textColor="@color/white"
+            android:text="Save"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

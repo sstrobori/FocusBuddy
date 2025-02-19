@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FocusBuddy</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="welcome_message">%1$s %2$s</string>
+    <string name="school_display">%1$s</string>
+    <string name="namefrontsettings_display">%1$s %2$s</string>
+
+
+    <string name="User_Info_Display">%1$s</string>
+
+    <string name="schedule">Schedule</string>
+    <string name="tasks">Tasks</string>
+    <string name="quizme">QuizMe</string>
+    <string name="settings">Settings</string>
+    <string name="pomodoro_button">Pomodoro Button</string>
+    <string name="card">Card</string>
+    <string name="homeset">homeset</string>
+    <string name="settingsbtn">settingsbtn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

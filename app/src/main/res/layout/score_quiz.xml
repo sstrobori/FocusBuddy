@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+    <!-- Score Title -->
+    <TextView
+        android:id="@+id/text_Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:textColor="#3187CA"
+        android:fontFamily="@font/bubbleboddy_regular"/>
+
+
+    <!-- Score Number Display -->
+    <TextView
+        android:id="@+id/text_Score_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0/0"
+        android:textColor="#3187CA"
+        android:textSize="45sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/back_to_quizzes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Quizzes"
+            android:fontFamily="@font/kiddosy_regular"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:backgroundTint="#5BADEC"/>
+    </LinearLayout>
+
+
+</LinearLayout>

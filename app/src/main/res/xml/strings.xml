@@ -1,0 +1,197 @@
+<resources>
+
+    <string anme = "app_name">FocusBuddy</string>
+    <string name="button_schedule">Schedule</string>
+    <string name="button_tasks">Tasks</string>
+    <string name="button_quizme">QuizMe</string>
+    <string name="settings_button_desc">Settings</string>
+    <string name="focus_button_desc">Focus Button</string>
+
+
+
+
+
+
+    <!-- Input Field Hints -->
+    <string name="first_name">First Name</string>
+    <string name="middle_initial">Middle Initial</string>
+    <string name="last_name">Last Name</string>
+    <string name="suffix">Suffix</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!-- Labels -->
+    <string name="birthday">Birthday</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="log_in">Log In</string>
+
+    <!-- Accessibility -->
+    <string name="create_account_header_desc">Create Account Header</string>
+    <string name="account_icon_desc">Account Icon</string>
+    <string name="email_icon_desc">Email Icon</string>
+    <string name="password_icon_desc">Password Icon</string>
+    <string name="next_button_desc">Next Button</string>
+
+    <!-- UI Strings -->
+    <string name="app_name">YourApp</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="dont_have_account">Don't have an account yet?</string>
+    <string name="create_account">Create Account</string>
+
+    <!-- Button Texts -->
+    <string name="login_button">Login</string>
+    <string name="nextsignup_button">Next Signup</string>
+    <string name="signupbtn">Next Signup</string>
+
+    <!-- Birthday -->
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+
+
+
+
+    <string-array name="months_array">
+        <item>Month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="days_array">
+        <item>Day</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="years_array">
+        <item>Year</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+        <item>1974</item>
+        <item>1973</item>
+        <item>1972</item>
+        <item>1971</item>
+        <item>1970</item>
+        <item>1969</item>
+        <item>1968</item>
+        <item>1967</item>
+        <item>1966</item>
+        <item>1965</item>
+        <item>1964</item>
+        <item>1963</item>
+        <item>1962</item>
+        <item>1961</item>
+        <item>1960</item>
+        <item>1959</item>
+        <item>1958</item>
+        <item>1957</item>
+        <item>1956</item>
+        <item>1955</item>
+        <item>1954</item>
+        <item>1953</item>
+        <item>1952</item>
+        <item>1951</item>
+        <item>1950</item>
+        <item>1949</item>
+        <item>1948</item>
+        <item>1947</item>
+        <item>1946</item>
+        <item>1945</item>
+        <item>1944</item>
+        <item>1943</item>
+        <item>1942</item>
+        <item>1941</item>
+        <item>1940</item>
+        <item>1939</item>
+        <item>1938</item>
+        <item>1937</item>
+        <item>1936</item>
+        <item>1935</item>
+        <item>1934</item>
+        <item>1933</item>
+        <item>1932</item>
+        <item>1931</item>
+        <item>1930</item>
+        <item>1929</item>
+        <item>1928</item>
+        <item>1927</item>
+        <item>1926</item>
+        <item>1925</item>
+    </string-array>
+
+</resources>

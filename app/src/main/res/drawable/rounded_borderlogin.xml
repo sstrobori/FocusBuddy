@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer shadow -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#33000000"/>
+            <corners android:radius="14dp"/>
+        </shape>
+    </item>
+
+    <!-- Main shape with stroke -->
+    <item android:left="1dp" android:right="2dp" android:top="2dp" android:bottom="1dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#FFFFFF"/>
+            <stroke android:width="2dp" android:color="#5BADEC"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+</layer-list>

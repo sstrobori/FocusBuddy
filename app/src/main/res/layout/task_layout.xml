@@ -1,0 +1,47 @@
+<!-- res/layout/task_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/schedule_item"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/rounded_borderlogin">
+
+    <CheckBox
+        android:id="@+id/checkbox_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Task Title"
+        android:textSize="20sp"
+        android:textColor="#25435B"
+        android:layout_marginStart="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete_task_btn"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="12dp"
+        android:backgroundTint="#ffffff"
+        android:fontFamily="@font/kiddosy_regular"
+        android:text="X"
+        android:textColor="#5BADEC"
+        android:textSize="15sp"
+        app:cornerRadius="32dp" />
+
+
+    </LinearLayout>
+

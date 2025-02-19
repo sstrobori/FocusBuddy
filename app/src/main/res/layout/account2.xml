@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard"
+    tools:ignore="ExtraText">
+
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pomodoro_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+
+    <ImageView
+        android:id="@+id/account"
+        android:layout_width="248dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="92dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pomodoro_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/acc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/profilebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="58dp" />
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settingsbtn"
+            app:layout_constraintStart_toEndOf="@+id/profilebtn"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <ImageButton
+            android:id="@+id/settingsbtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="311dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical"
+        android:paddingVertical="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:text="Username"
+                android:textColor="#a575d2"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="268dp" />
+
+            <EditText
+                android:id="@+id/edit_username"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:hint="grasya" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView_pronouns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="62dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:text="Email"
+                android:textColor="#a575d2"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="317dp" />
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:hint="******ce@gmail.com" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:text="Password"
+                android:textColor="#a575d2"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="368dp" />
+
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/kiddosy_regular"
+                android:hint="*************" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_save_account"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="143dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:backgroundTint="#5BADEC"
+                android:fontFamily="@font/kiddosy_regular"
+                android:gravity="center"
+                android:text="Save"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                app:cornerRadius="32dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

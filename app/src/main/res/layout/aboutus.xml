@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard"
+    tools:ignore="ExtraText">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pomodoro_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+
+    <ImageView
+        android:id="@+id/aboutus"
+        android:layout_width="248dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="76dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pomodoro_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/abtus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/aboutustext"
+        android:layout_width="344dp"
+        android:layout_height="428dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pomodoro_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/txtabtus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutus"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/profilebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="58dp" />
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settingsbtn"
+            app:layout_constraintStart_toEndOf="@+id/profilebtn"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <ImageButton
+            android:id="@+id/settingsbtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="311dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

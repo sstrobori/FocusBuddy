@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/linearWeekdays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Weekday Spinner -->
+        <Spinner
+            android:id="@+id/spinnerWeekday_sched"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- Time EditText -->
+        <EditText
+            android:id="@+id/editTime_sched"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Start Time"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editTime_sched2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="End Time"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <!-- Subject EditText -->
+        <EditText
+            android:id="@+id/editSubject_sched"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Subject"
+            android:inputType="text" />
+
+        <!-- Container for Additional Questions -->
+        <LinearLayout
+            android:id="@+id/additional_schedule_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Additional question views will be dynamically added here -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/add_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="+ Add another schedule"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:backgroundTint="#5BADEC"
+            android:textColor="@color/white"
+            android:text="Save"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

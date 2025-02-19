@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Quiz Title -->
+        <EditText
+            android:id="@+id/quiz_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Quiz Title"
+            android:fontFamily="@font/kiddosy_regular"
+            android:textStyle="bold"
+            android:inputType="text" />
+
+
+        <!-- Quiz Question -->
+        <EditText
+            android:id="@+id/quiz_question"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter question"
+            android:textStyle="bold"
+            android:inputType="text" />
+
+
+        <!-- Answer Choices -->
+        <EditText
+            android:id="@+id/answer_choice_1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Choice 1" />
+
+
+        <EditText
+            android:id="@+id/answer_choice_2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Choice 2" />
+
+
+        <EditText
+            android:id="@+id/answer_choice_3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Choice 3" />
+
+
+        <EditText
+            android:id="@+id/answer_choice_4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Choice 4" />
+
+
+        <!-- Right Answer Selection -->
+        <TextView
+            android:id="@+id/text_select_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Correct Answer"
+            android:textSize="20sp"
+            android:textColor="#5BADEC"
+            android:fontFamily="@font/bubbleboddy_regular"
+            android:layout_marginTop="8dp" />
+
+
+        <RadioGroup
+            android:id="@+id/right_answer_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+
+            <RadioButton
+                android:id="@+id/right_answer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+
+            <RadioButton
+                android:id="@+id/right_answer_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+
+            <RadioButton
+                android:id="@+id/right_answer_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+
+            <RadioButton
+                android:id="@+id/right_answer_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+        </RadioGroup>
+
+
+        <!-- Container for Additional Questions -->
+        <LinearLayout
+            android:id="@+id/additional_questions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Additional question views will be dynamically added here -->
+        </LinearLayout>
+
+
+        <!-- Add Another Question and Save Quiz Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/add_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="+ Add another question"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/save_quiz_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#5BADEC"
+                android:fontFamily="@font/kiddosy_regular"
+                android:gravity="center"
+                android:text="Save Quiz"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

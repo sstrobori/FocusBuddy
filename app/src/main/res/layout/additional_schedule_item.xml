@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schedule_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/Time_sched_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:textColor="#316690"
+            android:text="Time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:textColor="#316690"
+            android:text="-"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/Time_sched_dis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:textColor="#316690"
+            android:text="Time" />
+
+    </LinearLayout>
+
+
+
+    <!-- Subject -->
+    <TextView
+        android:id="@+id/Subject_sched_dis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:textColor="#25435B"
+        android:text="Subject" />
+
+
+</LinearLayout>
+
+

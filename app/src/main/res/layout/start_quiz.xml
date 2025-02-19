@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+
+        <!-- Question Display -->
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question will appear here"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#3187CA"
+            android:fontFamily="@font/kiddosy_regular"/>
+
+
+        <!-- Answer Choices -->
+        <RadioGroup
+            android:id="@+id/answer_choices_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+
+            <RadioButton
+                android:id="@+id/answer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 1" />
+
+
+            <RadioButton
+                android:id="@+id/answer_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 2" />
+
+
+            <RadioButton
+                android:id="@+id/answer_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 3" />
+
+
+            <RadioButton
+                android:id="@+id/answer_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 4" />
+        </RadioGroup>
+
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/next_button"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:backgroundTint="#549ED8"
+            android:fontFamily="@font/kiddosy_regular"
+            android:text="next"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="32dp" />
+
+
+    </LinearLayout>
+</ScrollView>
